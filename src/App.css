@@ -20,22 +20,6 @@ padding:7vw
   color: hsl(193, 95%, 68%);
 }
 
-.navButton{
-  position: fixed;
-  top: 50vh;
-  right: 8px;
-  width: 4.8rem;
-  height: 4.8rem;
-  background-color: rgb(47, 115, 241);
-  transform: translateY(-50px);
-  user-select: none;
-  border: none;
-  cursor: pointer;
-  z-index: 100;
-}
-
-
-
 
 /* loading screen~ */
 @-webkit-keyframes outerRotate1 {

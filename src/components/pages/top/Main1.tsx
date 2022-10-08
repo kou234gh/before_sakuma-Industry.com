@@ -3,7 +3,7 @@ import headImg from '../../../img/header.jpeg'
 export function Main1() {
 
   return (
-    <div className='main1 w-[100%] h-[auto] flex bg-white relative'>
+    <div className='main1 w-[100%] h-[auto] flex bg-white relative z-0'>
       <img
         alt='佐久間工業所風景背景'
         src={headImg}
