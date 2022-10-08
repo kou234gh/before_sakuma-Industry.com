@@ -1,0 +1,377 @@
+/* common setting
+padding:7vw
+
+ */
+
+.App {
+  max-width: 100%;
+  width: 100%;
+  background-color: azure;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: hsl(193, 95%, 68%);
+}
+
+.navButton{
+  position: fixed;
+  top: 50vh;
+  right: 8px;
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: rgb(47, 115, 241);
+  transform: translateY(-50px);
+  user-select: none;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+
+
+
+/* loading screen~ */
+@-webkit-keyframes outerRotate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-moz-keyframes outerRotate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-o-keyframes outerRotate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes outerRotate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes outerRotate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@-moz-keyframes outerRotate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@-o-keyframes outerRotate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes outerRotate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@-webkit-keyframes textColour {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #000000;
+  }
+}
+@-moz-keyframes textColour {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #000000;
+  }
+}
+@-o-keyframes textColour {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #3bb2d0;
+  }
+}
+@keyframes textColour {
+  to {
+    background-position: 300% center;
+  }
+}
+
+.e-loadholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  width: 240px;
+  height: 240px;
+  border: 6px solid #1b5f70;
+  border-radius: 120px;
+  box-sizing: border-box;
+}
+.e-loadholder:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  content: " ";
+  display: block;
+  background: #333;
+  transform-origin: center;
+  z-index: 0;
+}
+.e-loadholder:after {
+  width: 100px;
+  height: 200%;
+  -webkit-animation: outerRotate2 30s infinite linear;
+  -moz-animation: outerRotate2 30s infinite linear;
+  -o-animation: outerRotate2 30s infinite linear;
+  animation: outerRotate2 30s infinite linear;
+}
+.e-loadholder .m-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  width: 200px;
+  height: 200px;
+/*   color: #888; */
+/*   color: #c1121f; */
+  text-align: center;
+  border: 5px solid #2a93ae;
+/*   c1121f */
+  border: 5px solid #c1121f;
+  border-radius: 100px;
+  box-sizing: border-box;
+  z-index: 20;
+  text-transform: uppercase;
+}
+.e-loadholder .m-loader:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  content: " ";
+  display: block;
+  background: #333;
+  transform-origin: center;
+  z-index: -1;
+}
+.e-loadholder .m-loader:after {
+  width: 100px;
+  height: 106%;
+  -webkit-animation: outerRotate1 15s infinite linear;
+  -moz-animation: outerRotate1 15s infinite linear;
+  -o-animation: outerRotate1 15s infinite linear;
+  animation: outerRotate1 15s infinite linear;
+}
+.e-loadholder .m-loader .e-text {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 130px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  -webkit-animation: textColour 1s alternate linear infinite;
+  -moz-animation: textColour 1s alternate linear infinite;
+  -o-animation: textColour 1s alternate linear infinite;
+  animation: textColour 1s alternate linear infinite;
+  display: block;
+  width: 140px;
+  height: 140px;
+  text-align: center;
+/*   border: 5px solid #3bb2d0; */
+  border: 4px solid #ffffff95;
+  
+  border-radius: 70px;
+  box-sizing: border-box;
+/*   z-index: 21; */
+  z-index:20;
+}
+.e-loadholder .m-loader .e-text:before,
+.e-loadholder .m-loader .e-text:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  content: " ";
+  display: block;
+  background: #333;
+  transform-origin: center;
+  z-index: -1;
+}
+.e-loadholder .m-loader .e-text:before {
+  width: 110%;
+  height: 40px;
+  -webkit-animation: outerRotate2 3.5s infinite linear;
+  -moz-animation: outerRotate2 3.5s infinite linear;
+  -o-animation: outerRotate2 3.5s infinite linear;
+  animation: outerRotate2 3.5s infinite linear;
+/*   z-index:; */
+}
+.e-loadholder .m-loader .e-text:after {
+  width: 40px;
+  height: 110%;
+  -webkit-animation: outerRotate1 8s infinite linear;
+  -moz-animation: outerRotate1 8s infinite linear;
+  -o-animation: outerRotate1 8s infinite linear;
+  animation: outerRotate1 8s infinite linear;
+}
+
+.m-loader .e-text span.front-text{
+   /* TEST~ */
+  background: linear-gradient(to right, #c1121f 20%, #fff 40%, #fff 60%, #669bbc 80%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* ~TEST */
+  -webkit-animation: textColour 2s alternate linear infinite;
+  animation: textColour 2s alternate linear infinite;
+  font-weight:700;
+  font-size: 26px;
+}
+/* ~ loading css */
+
+/* menu button */
+#btn_menu1 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	background-color: #222;
+	transition: background-color 0.3s ease;
+}
+#btn_menu1::before {
+	position: absolute;
+	top: calc(50% - 1px);
+	left: 25%;
+	display: block;
+	content: "";
+	width: 50%;
+	height: 2px;
+	background: #f7f7f7;
+	opacity: 0;
+	transform: rotate(45deg);
+	transition: opacity 0.3s ease;
+}
+#btn_menu1 span {
+	display: block;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+#btn_menu1 span::before,
+#btn_menu1 span span, #btn_menu1 span::after {
+	position: absolute;
+	top: 12%;
+	left: 0;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background: #f7f7f7;
+	transition: opacity 0.3s ease;
+}
+#btn_menu1 span span {
+	top: calc(50% - 1px);
+}
+#btn_menu1 span::after {
+	top: auto;
+	bottom: 12%;
+}
+#btn_menu1::after {
+	position: absolute;
+	top: calc(50% - 1px);
+	left: 25%;
+	display: block;
+	content: "";
+	width: 50%;
+	height: 2px;
+	background: #f7f7f7;
+	opacity: 0;
+	transform: rotate(-45deg);
+	transition: opacity 0.3s ease;
+}
+#btn_menu1:hover {
+	background-color: #555;
+}
+#btn_menu1.active::before {
+	opacity: 1;
+}
+#btn_menu1.active span {
+	opacity: 0;
+}
+#btn_menu1.active::after {
+	opacity: 1;
+}
+/* menu button */
+
+
